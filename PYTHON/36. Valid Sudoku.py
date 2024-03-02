@@ -9,7 +9,7 @@ class Solution:
                 if board[j][i] in column and board[j][i] != ".":
                     return False
                 else:
-                    column.add(board[i][j])
+                    column.add(board[j][i])
         for i in range(0,9,3):  # checking every 3x3 sub-box
             for j in range(0,9,3):
                 square=set()
