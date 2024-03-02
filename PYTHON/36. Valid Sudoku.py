@@ -2,7 +2,7 @@ class Solution:
     def isValidSudoku(self, board: list[list[str]]) -> bool:
         for i in range(9):
             for s in set(board[i]):  # checking every row
-                if board[i].count(s)>1 and s != ".":
+                if board[i].count(s) > 1 and s != ".":
                     return False
             column=set()
             for j in range(9):  # checking every column
